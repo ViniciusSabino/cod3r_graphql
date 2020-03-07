@@ -24,6 +24,7 @@ const typeDefs = gql`
         usuarioLogado: Usuario
         usuarios: [Usuario!]!
         produtoEmDestaque: Produto
+        numerosMegaSena: [Int!]!
     }
 `;
 

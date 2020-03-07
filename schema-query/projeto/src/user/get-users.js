@@ -9,7 +9,7 @@ const getUsers = () => [
     },
     {
         id: 2,
-        name: 'Rayza Sabino da Rocha',
+        nome: 'Rayza Sabino da Rocha',
         email: 'rayza@sabino.com.br',
         idade: 5,
         salario: 0,
