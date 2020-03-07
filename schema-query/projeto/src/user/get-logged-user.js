@@ -4,7 +4,7 @@ const getLoggedUser = () => ({
     email: 'vnc.chelsea@gmail.com',
     idade: 24,
     salario_real: 9999.99,
-    vip: true
-  });
+    vip: true,
+});
 
 module.exports = getLoggedUser;
