@@ -4,7 +4,7 @@ const { gql } = require('apollo-server');
 const typeDefs = gql`
     # ! => significa que o atributo é obrigatório
     type Usuario {
-        id: ID
+        id: Int
         nome: String!
         email: String!
         idade: Int
@@ -19,12 +19,20 @@ const typeDefs = gql`
         precoComDesconto: Float
     }
 
+    type Perfil {
+        id: Int
+        nome: String
+    }
+
     # Pontos de entrada da sua API!
     type Query {
         usuarioLogado: Usuario
         usuarios: [Usuario!]!
+        usuario(id: Int): Usuario
         produtoEmDestaque: Produto
         numerosMegaSena: [Int!]!
+        perfis: [Perfil]
+        perfil(id: Int): Perfil
     }
 `;
 

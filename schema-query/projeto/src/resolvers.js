@@ -1,6 +1,7 @@
 const User = require('./user');
 const Product = require('./product');
 const Other = require('./other');
+const Perfil = require('./perfil');
 
 // Irá resolver os dados de várias formas diferentes
 const resolvers = {
@@ -11,6 +12,7 @@ const resolvers = {
         ...User.queries,
         ...Product.queries,
         ...Other.queries,
+        ...Perfil.queries,
     },
 };
 
